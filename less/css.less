@@ -30,7 +30,7 @@
 html,body {height:100%; background: #ddddde;}
 
 body{
-background: url(../imgs/bac.jpg) repeat-y; max-width: 1920px; margin:0 auto;
+background: url('../imgs/bac.png') repeat-y; max-width: 1920px; height: 100%; margin:0 auto;
 .clearFix ;
 
 }
@@ -38,7 +38,7 @@ background: url(../imgs/bac.jpg) repeat-y; max-width: 1920px; margin:0 auto;
 header{
 	padding-top: 35px;
 
-	.logo{background:url(../imgs/logo.png) no-repeat; 
+	.logo{background:url('../imgs/logo.png') no-repeat; 
 		height: 73px;
 		width:325px;
 		display:block;
@@ -49,7 +49,7 @@ header{
 
 input[type=submit] {
     
-    background:url(../imgs/search.jpg); 
+    background:url('../imgs/search.jpg'); 
     width: 45px;
     height: 45px;
     border:0 none;
@@ -153,7 +153,7 @@ li a {
 
 .container{
 background-color: #fff;
-height: 500px;
+height: 1120px;
 padding-top: 30px;
 
 
@@ -164,7 +164,66 @@ padding-top: 30px;
 	padding-left: 13px;
 	padding-top: 11px;
 	float: left;
+	position: relative;
+	z-index: 1;
+
+
+
+	p{
+		background-image:url('../imgs/sliderinfo.png');
+		height: 291px;
+		width: 149px;
+		top: 0px;
+		margin-left: 490px;
+		display: inline-block;
+		z-index: 2;
+		position: absolute;
+
+
+		.title{
+			font-size:22px; 
+			font-family: 'Arial Rounded';
+			font-weight: bold;
+			text-decoration: none;
+    		text-transform: uppercase;
+    		color: #eaeaea;
+    		text-align: center;
+    		display: block;
+    		padding-bottom: 20px;
+		}
+
+		.articlecontainer{
+			font-size: 12px; 
+			font-family: 'Arial Rounded';
+			text-decoration: none;
+    		color: #eaeaea;
+    		text-align: center;
+    		display: block;		
+    		padding-bottom:20px; 	
+		}
+
+		.buttonbuy{
+
+			font-size: 22px; 
+			font-family: 'Arial Rounded';
+			text-transform: uppercase;
+			text-decoration: none;
+    		color: #eaeaea;
+    		text-align: center;
+    		display: block;	
+    		height: 39px ;
+    		width: 126px; ;
+    		background-color: #d00000;	
+    		margin-left: 13px;
+    		padding-top: 6px;
+
+		}
+	} 
+
 }
+
+
+
 
 .litbanner{
 	background-image: url('../imgs/litbanner.png');
@@ -186,9 +245,449 @@ float: left;
 margin-top: 20px;
 
 }
-
-
-.centered;
 .clearFix;
+
+
+
+.mainContainer{
+	background-image: url('../imgs/maincont.png');
+	width: 1034px;
+	height: 393px;
+	margin-top: 380px;
+	padding-left: 20px;
+	padding-top: 20px;
+
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    
+    
 }
 
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: #3e3e3e;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 19px;
+    font-family: 'Arial Rounded';
+    font-weight: bold;
+    height: 56px;
+    width: 496px;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #d00000;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #d00000;
+}
+
+/* Style the tab content */
+.tabcontent {
+    width: 496px;
+    padding: 6px 12px;
+
+}
+
+	.centered;
+
+}
+
+
+
+
+
+.newprod{
+	width: 900px;
+	padding-top: 50px;
+	margin-left: 50px;
+
+
+
+.slick-prev,
+.slick-next
+{
+
+top:50%;
+}
+
+
+.slick-list
+{
+
+    margin-left: 40px;
+}
+
+	.slick-prev
+{
+    right: 870px;
+}
+[dir='rtl'] .slick-prev
+{
+    right: 0px;
+    left: auto;
+}
+.slick-prev:before
+{
+    content: url('../imgs/leftar.png');
+    
+
+}
+[dir='rtl'] .slick-prev:before
+{
+    content: '→';
+}
+
+.slick-next
+{
+    left:870px;
+}
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: 0px;
+}
+.slick-next:before
+{
+    content: url('../imgs/rightarr.png');
+}
+[dir='rtl'] .slick-next:before
+{
+    content: '←';
+}
+
+
+
+
+
+.prname{
+	font-family:'Arial';
+	font-size: 12px ;
+	display: block;
+	text-transform: uppercase;
+	color: #000;
+	text-decoration: none;
+	text-align: center;
+	padding-top: 10px;
+	width: 158px;
+
+}
+
+.pricebox{
+	background-image: url('../imgs/pricebox.png');
+	width: 87px;
+	height:38px;
+	text-align: center;
+	font-family:'Arial';
+	font-size: 18px ;
+	color: #373947;
+	padding-top: 8.5px;
+	margin-left: 30px;
+
+}
+
+.fav{
+		font-family:'Arial';
+		font-size: 11px;
+		margin-left: 20px;
+
+
+	.hearth{ 
+	background-image: url('../imgs/hearth.png');
+	display:block;
+	float: left;
+	background-repeat: no-repeat;
+	text-decoration: none;
+	width: 18px;
+	height: 19px;
+	margin-right: 4px;
+	margin-top: -4px;
+
+
+	}
+
+
+	.favorites{
+	font-family:'Arial';
+	font-size: 11px;
+	text-decoration: none;
+	color: #000;
+
+
+	}
+}
+
+
+
+
+
+}
+
+
+
+.terms{
+box-sizing: border-box;
+padding-top: 60px;
+margin-left: 30px;
+
+
+	.delivery{ 
+		text-align: center;
+		width: 250px;
+		float: left;
+		.deliverypic{
+			background-image: url('../imgs/delivery.png');
+		    background-repeat: no-repeat;
+		    width: 108px;
+		    height: 68px;
+		    margin-left: 78px;
+		}
+
+		h1{
+			font-family: 'Arial';
+			font-weight: bold;
+			font-size: 17pt;
+			color: #373947;
+		}
+
+		p{
+			font-family: 'Arial';
+			font-weight: bold;
+			font-size: 11pt;
+			color: #373947;
+		}
+	}
+
+
+
+	.payment{ 
+		text-align: center;
+		width: 150px;
+		float: left;
+		margin-left: 50px;
+		.paymentpic{
+			background-image: url('../imgs/payment.png');
+		    background-repeat: no-repeat;
+		    width: 77px;
+		    height: 65px;
+		    margin-left: 38px;
+		}
+
+		h1{
+			font-family: 'Arial';
+			font-weight: bold;
+			font-size: 17pt;
+			color: #373947;
+		}
+
+		p{
+			font-family: 'Arial';
+			font-weight: bold;
+			font-size: 11pt;
+			color: #373947;
+		}
+	}
+
+
+		.confidence{ 
+		text-align: center;
+		width: 240px;
+		float: left;
+		margin-left: 50px;
+		.confidencepic{
+			background-image: url('../imgs/confidence.png');
+		    background-repeat: no-repeat;
+		    width: 67px;
+		    height: 74px;
+		    margin-left: 90px;
+		}
+
+		h1{
+			font-family: 'Arial';
+			font-weight: bold;
+			font-size: 17pt;
+			color: #373947;
+		}
+
+		p{
+			font-family: 'Arial';
+			font-weight: bold;
+			font-size: 11pt;
+			color: #373947;
+		}
+	}
+
+
+
+		.helpCenter{ 
+		text-align: center;
+		width: 180px;
+		float: left;
+		margin-left: 50px;
+		.helppic{
+			background-image: url('../imgs/helpcenter.png');
+		    background-repeat: no-repeat;
+		    width: 119px;
+		    height: 71px;
+		    margin-left: 38px;
+		}
+
+		h1{
+			font-family: 'Arial';
+			font-weight: bold;
+			font-size: 17pt;
+			color: #373947;
+		}
+
+		p{
+			font-family: 'Arial';
+			font-weight: bold;
+			font-size: 11pt;
+			color: #373947;
+		}
+	}
+
+
+
+}
+
+
+
+
+
+
+.clearFix;
+.centered;
+
+}
+
+footer{
+	background-color: #111;
+	height: 190px;
+	padding-top: 10px;
+	position: relative;
+
+
+	.columnOne{
+		margin-left: 60px;
+		float: left;
+		width: 220px;
+
+		h1{
+			text-align: center;
+			font-family: 'Arial';
+			font-weight: bold;
+			font-size: 20px;
+			border-bottom: 2px solid #fff;
+			padding-bottom: 3px;
+			color: #fff;
+			text-transform: uppercase;
+		}
+
+		ul li a{ 
+			color: #fff;
+			text-decoration: none;
+			font-size: 24px;
+		 }
+
+	}
+
+
+
+		.columntwo{
+		margin-left: 60px;
+		float: left;
+		width: 220px;
+
+		h1{
+			text-align: center;
+			font-family: 'Arial';
+			font-weight: bold;
+			font-size: 20px;
+			border-bottom: 2px solid #fff;
+			padding-bottom: 3px;
+			color: #fff;
+			text-transform: uppercase;
+		}
+
+		ul li a{ 
+			color: #fff;
+			text-decoration: none;
+			font-size: 24px;
+		 }
+
+	}
+
+
+
+		.columnthree{
+		margin-left: 60px;
+		float: left;
+		width: 350px;
+
+		h1{
+			text-align: center;
+			font-family: 'Arial';
+			font-weight: bold;
+			font-size: 20px;
+			border-bottom: 2px solid #fff;
+			padding-bottom: 3px;
+			color: #fff;
+			text-transform: uppercase;
+		}
+
+		ul li a{ 
+			color: #fff;
+			text-decoration: none;
+			font-size: 24px;
+		 }
+
+	}
+	.clearFix;
+
+.copy{		text-align: center;
+			font-family: 'Arial';
+			font-weight: bold;
+			font-size: 12px;
+			color: #fff;
+			display: block;
+			margin-top: 150px;
+
+
+}
+
+.instagram{
+	background-image: url("../imgs/instagram.png");
+	width: 38px;
+	height: 38px;
+	display: block;
+	position: absolute;
+	right: 230px;
+	bottom: 30px;
+}
+
+.fb{
+	background-image: url("../imgs/fb.png");
+	width: 38px;
+	height: 38px;
+	display: block;
+	position: absolute;
+	right: 180px;
+	bottom: 30px;
+}
+
+
+	.centered
+}
